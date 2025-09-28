@@ -28,7 +28,7 @@ function App() {
 
 	const handleCheck = () => {
 		const flatBoard = board.flat();
-		const flatSolution = board.flat();
+		const flatSolution = solution.flat();
 
 		if (flatBoard.every((cell, i) => cell === flatSolution[i])) {
 			setStatus("Correct");
@@ -108,7 +108,27 @@ function App() {
 				handleNewPuzzle={handleNewPuzzle}
 			/>
 
-			{status && <div className="status">{status}</div>}
+			{status && (
+				<div
+					className="status"
+					style={{
+						backgroundColor:
+							status === "Incorrect , try Again !"
+								? "hsla(0, 42%, 14%, 1.00)"
+								: "hsla(112, 42%, 14%, 1.00)",
+						color:
+							status === "Incorrect , try Again !"
+								? "hsl(0, 83%, 36%)"
+								: "hsl(112, 83%, 36%)",
+						border:
+							status === "Incorrect , try Again !"
+								? "1.5px solid hsl(0, 60%, 22%)"
+								: "1.5px solid hsl(112, 60%, 22%)",
+					}}
+				>
+					{status}
+				</div>
+			)}
 		</div>
 	);
 }

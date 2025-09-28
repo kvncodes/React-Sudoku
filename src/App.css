@@ -1,7 +1,8 @@
 .container {
 	border-radius: 8px;
-	padding: 10px;
-	background: #ffffff;
+	padding: 12px;
+	background: hsla(199, 35%, 14%, 0.653);
+	border: 1.5px solid hsl(200, 60%, 22%);
 }
 
 h1 {
@@ -22,28 +23,28 @@ h1 {
 }
 
 .cell {
-	border: 1px solid #808080;
+	border: 1px solid #e5e5e5;
 	padding: 0;
 }
 
 .cell:nth-child(3),
 .cell:nth-child(6),
 .cell:nth-child(9) {
-	border-right: 3px solid #333;
+	border-right: 3px solid #ffffff;
 }
 
 .cell:nth-child(1) {
-	border-left: 3px solid #333;
+	border-left: 3px solid #ffffff;
 }
 
 .table tr:nth-child(3) .cell,
 .table tr:nth-child(6) .cell,
 .table tr:nth-child(9) .cell {
-	border-bottom: 3px solid #333;
+	border-bottom: 3px solid #ffffff;
 }
 
 .table tr:nth-child(1) .cell {
-	border-top: 3px solid #333;
+	border-top: 3px solid #ffffff;
 }
 
 input {
@@ -54,19 +55,19 @@ input {
 	border: none;
 	outline: none;
 	background: inherit;
-	color: black;
+	color: rgb(255, 255, 255);
 	cursor: default;
 }
 
 input:focus {
-	background-color: #78b1eb;
+	background-color: hsl(200, 83%, 36%);
 	caret-color: transparent;
 }
 
 .same-row,
 .same-col,
 .same-box {
-	background: #e6f0ff;
+	background: #193239;
 }
 
 .status {
@@ -82,7 +83,7 @@ input:focus {
 }
 
 .green {
-	background-color: #a6f1a6;
+	background-color: #1f3959;
 	transition: background-color 0.3s ease-in;
 }
 
@@ -90,7 +91,7 @@ input:focus {
 	background-color: hsl(200, 42%, 14%);
 	border: 1.5px solid hsl(200, 60%, 22%);
 	color: hsl(200, 83%, 36%);
-	padding: 0.3rem 1rem;
+	padding: 0.3rem 2rem;
 	border-radius: 6px;
 	font-weight: 500;
 	cursor: pointer;

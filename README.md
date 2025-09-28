@@ -1,16 +1,40 @@
-# React + Vite
+# Loje Sudoku - React JS
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+---
 
-Currently, two official plugins are available:
+![Preview](Result.png "Title")
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## Përmbledhje
 
-## React Compiler
+Lojë Sudoku me funksione të plota në React, duke përfshirë:
 
-The React Compiler is not enabled on this template. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+-   Marrjen e te dhenave nga një API
+-   Paraqitjen e tabeles Sudoku
+-   Lejimin e përdoruesve për të futur numra
+-   Kontrollin e saktësisë / validimin
+-   Animacionet e fitores / reagimet e përdoruesit
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Konfigurimi dhe Arkitektura e Projektit
+
+### 1. Skela e Projektit
+
+-   Filloni një projekt të ri React (nëpërmjet `create-react-app` ose të ngjashme)
+-   Instaloni varësi shtesë nëse është e nevojshme (marrje, stilim, animacione)
+-   Struktura e sugjeruar e dosjeve:
+
+-   -   /src
+        -   /components
+    -                   - Board.jsx
+    -                   - Cell.jsx
+    -                   - Controls.jsx
+    -   /api
+    -                   - fetchPuzzle.js
+    -   App.jsx
+    -   index.jsx
+    -   styles.css (ose module)
+
+-   `fetchPuzzle.js` permban funksione per te mare te dhena nga API
+
+---
