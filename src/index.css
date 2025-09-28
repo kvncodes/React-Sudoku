@@ -95,6 +95,7 @@ body {
 	align-items: center;
 	min-width: 320px;
 	min-height: 100vh;
+	padding-inline: 2rem;
 }
 
 @media (prefers-color-scheme: light) {

@@ -90,7 +90,12 @@ function App() {
 	}
 
 	return (
-		<div style={{ textAlign: "center" }}>
+		<div
+			className="sudoku"
+			style={{
+				textAlign: "center",
+			}}
+		>
 			<h1>Sudoku</h1>
 
 			<Grid
